@@ -1,0 +1,25 @@
+{% include 'tcc/header.html' %}
+<link rel="stylesheet" type="text/css" href="/static/tcc/css/mensagens.css"/>
+<div id = "principal">
+    <table> 	
+        <caption> Mensagens </caption>
+            <tr>
+                <th scope="col">Horário</th>
+                <th scope="col">Região</th>
+                <th scope="col">Alerta</th>
+                <th scope="col">Valor</th>
+            </tr>
+            {% for alerta in alertas %}
+            <tr class="{% cycle 'odd' 'even'  %}">
+                <td style="text-align: center;">{{ alerta.horario }}</td>
+                <td style="text-align: center;">{{ alerta.dado.sensor.nome }}</td>
+                <td style="text-align: center;">{{ alerta.tipo }} {% if alerta.operador == '>' %} muito alto {% else %} muito baixo  {% endif %} de {{ alerta.valor }}</td>
+                <td style="text-align: center;">{{ alerta.dado.valor }}</td>
+            </tr>
+            {% endfor %}
+    </table>
+</div>
+{% include 'tcc/footer.html' %}	
+
+
+

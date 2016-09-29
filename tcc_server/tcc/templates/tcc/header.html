@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+       <title>{{ titulo }}</title>
+	   <meta charset = "utf-8">
+       <link rel="stylesheet" type="text/css" href="/static/tcc/css/estilo.css"/>
+	   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+       <script type="text/javascript">
+<!--
+var regioes = {};
+{% for regiao in regioes %} regioes['{{ regiao.id }}'] = '{{ regiao.nome }}'; {% endfor %}
+-->
+       </script>
+       <script type="text/javascript" src="/static/tcc/jquery.min.js"></script>
+       <script type="text/javascript" src="/static/tcc/highcharts.js"></script>
+       <script type="text/javascript" src="/static/tcc/highcharts-map.js"></script>
+       <script type="text/javascript" src="/static/tcc/sensorId.js"></script>
+       <script type="text/javascript" src="/static/tcc/ler-ajax.js"></script>
+	  </head>
+	<body>
+        <div id="cssmenu" class="divMenu">
+				<ul>
+					<li><a href="/tcc">Home</a></li>
+					<li><a href="/tcc/sensores">Sensores</a></li>
+					<li><a href="/tcc/graficos">Mapa e Gráficos</a></li>
+					<li><a href="/tcc/mensagens">Mensagens</a></li>
+					<li><a href="/tcc/configuracoes">Configurações</a></li>
+				</ul>
+		</div>

@@ -1,0 +1,18 @@
+{% include 'tcc/header.html' %}
+<link type="stylesheet" href="graf.css">
+		<div id="divPrincipal" class="divComponentes">
+			
+			<!-- REGIÃO DE EXIBIÇÃO DO MAPA -->
+			<div id="containerMap" class="divMap"></div>					
+			<script src ="/static/tcc/prototipoMapa.js"></script>
+
+			<!-- REGIÃO DE EXIBIÇÃO DOS GRÁFICOS -->
+			<div id="Graficos" class="divGraficos">
+					<div id="container1" class="divGrafico1 divGrafico divGraficoBorda" ></div>
+					<div id="container2" class="divGrafico2 divGrafico divGraficoBorda" ></div>
+					<div id="container3" class="divGrafico3 divGrafico divGraficoBorda" ></div>
+					<script src="/static/tcc/graficosHome.js"></script>
+			</div>
+        </div>
+{% include 'tcc/footer.html' %}
+

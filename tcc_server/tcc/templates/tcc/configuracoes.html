@@ -1,0 +1,84 @@
+{% include 'tcc/header.html' %}
+<link rel="stylesheet" type="text/css" href="/static/tcc/css/configuracoes.css"/>
+
+<div class="divPainel">
+    <h3 class="h3Titulo"> Configurações do Sistema </h3>
+    <form action="/tcc/configuracoes" method="POST">
+        <div class="divConfigSolo divConfigPainel">
+
+            <h3> Solo </h3>
+
+            <div class="divConfigSoloTemp divConfig">
+
+                <h4> Temperatura ºC </h4>
+
+                <div class="divCampo divMinimo">
+                    <label class="lblMinimo lbl">Mínimo</label>
+                    <input type="number" step="0.1" class="inputNum" name="TemperaturaSolo_MIN" value="{{ TemperaturaSolo_MIN }}"/> 
+                </div>	
+
+                <div class="divCampo divMaximo">
+                    <label class="lblMaximo lbl">Máximo</label>
+                    <input type="number" step="0.1" class="inputNum" name="TemperaturaSolo_MAX" value="{{ TemperaturaSolo_MAX }}"/> 
+                </div>
+
+            </div>	
+
+            <div class="divConfigSoloUmi divConfig ">
+
+                <h4> Umidade % </h4>
+
+                <div class="divCampo divMinimo">
+                    <label class="lblMinimo lbl">Mínimo</label>
+                    <input type="number" step="0.1" class="inputNum" name="UmidadeSolo_MIN" value="{{ UmidadeSolo_MIN }}"/> 
+                </div>	
+
+                <div class="divCampo">
+                    <label class="lblMaximo lbl">Máximo</label>
+                    <input type="number" step="0.1" class="inputNum" name="UmidadeSolo_MAX" value="{{ UmidadeSolo_MAX }}"/> 
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="divConfigAr divConfigPainel">
+            <h3> Ar </h3>
+            <div class="divConfigAremp divConfig">
+                <h4> Temperatura ºC</h4>
+                <div class="divCampo divMinimo">
+                    <label class="lblMinimo lbl">Mínimo</label>
+                    <input type="number" step="0.1" class="inputNum" name="TemperaturaAr_MIN" value="{{ TemperaturaAr_MIN }}"/> 
+                </div>	
+                <div class="divCampo">
+                    <label class="lblMaximo lbl">Máximo</label>
+                    <input type="number" step="0.1" class="inputNum" name="TemperaturaAr_MAX" value="{{ TemperaturaAr_MAX }}"/> 
+                </div>
+            </div>	
+            <div class="divConfigArUmi divConfig">
+                <h4> Umidade % </h4>
+                <div class="divCampo divMinimo">
+                    <label class="lblMinimo lbl">Mínimo</label>
+                    <input type="number" step="0.1" class="inputNum" name="UmidadeAr_MIN" value="{{ UmidadeAr_MIN }}"/> 
+                </div>	
+                <div class="divCampo">
+                    <label class="lblMaximo lbl">Máximo</label>
+                    <input type="number" step="0.1" class="inputNum" name="UmidadeAr_MAX" value="{{ UmidadeAr_MAX }}"/> 
+                </div>
+            </div>
+        </div>
+
+        <div class="divBtn">
+            <input type="hidden" name="Chuva_MIN" value="50"/> 
+            <input type="hidden" name="Chuva_MAX" value="50"/>
+            <input type="submit" value="Gravar Configurações" class="btnGravar"/>
+        </div>
+
+    </form>
+</div>
+
+
+
+
+
+{% include 'tcc/footer.html' %}

@@ -1,0 +1,14 @@
+Dados para pesquisa e auxilio na produção para a área de agronomia utilizando
+sensores do ar e do solo.
+
+UNIP - Sorocaba
+
+Fernando Rodrigues Baroni
+Leticia Verginia Penha
+Marcelo José dos Santos
+Wellington Henrique S. Silva
+
+
+tcc_rpi = Raspberry PI - Sensores de umidade/temperatura solar/ambiente, sensor de chuva (Rain Drops Meter)
+tcc_server = Django Web App (Python) - Servicos para armazenamento das informacoes coletadas dos sensores, disponibilizadas usando REST, um painel basico em HTML para visualizar os dados em realtime usando Highcharts
+

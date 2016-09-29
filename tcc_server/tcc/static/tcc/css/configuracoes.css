@@ -1,0 +1,102 @@
+/*	-- DEFINE TAMANHO PARA DO CORPO PADRÃO DA PÁGINA*/
+
+.divPainel{
+
+	background-color:rgba(255,255,255,0.80);
+	width: 1024px;
+	height: 800px;
+	margin: auto;
+}
+
+/*---------------------------------------------------*/
+
+/* -- CONFIGURAÇÕES/ESTILOS GERAIS PARA TODOS AS CLASSES SEMELHANTES -- */
+
+.divCampo{
+
+	display: inline-block;
+	
+}
+
+.divMinimo{
+
+	margin-left: 150px;
+
+}
+
+.inputMinimo{
+
+	margin-right: 20px;
+}
+
+.divConfigPainel{
+
+	border: 2px solid white;
+	width: 500px;
+	height: 260px;
+	margin: auto;
+	background-color: white;
+	border-radius: 14px;
+}
+
+.divConfigAr{
+
+	margin-top: 10px;
+}
+
+.divBtn{
+
+	border: 2px solid white;
+	width: 500px;
+	height: 90px;
+	margin: auto;
+	margin-top: 10px;
+	background-color: white;
+	border-radius: 14px;
+
+}
+
+.btnGravar{
+	margin-top: 20px;
+	margin-left: 180px;
+}
+
+/*----------------------------------------------------------------*/
+
+
+/* -- CONFIGURAÇÕES/ESTILOS GERAIS PARA TODAS AS TAGS -- */
+
+h3{
+	text-align: center;
+	color:#036;
+    font-weight:bold;
+	font-family: Source Sans Pro, sans-serif;
+}
+
+h4{
+
+	margin-left: 150px;
+}
+
+.h3Titulo{
+
+	/*margin-top: 0px;*/
+	padding-top: 20px;
+}
+
+label{
+
+	display: block;
+	color:#036;
+    font-weight:bold;
+    font-size: 15px;
+	font-family: Source Sans Pro, sans-serif;
+}
+
+.inputNum{
+
+	width: 90px;
+
+}
+
+/*	---------------------------------------------------  */

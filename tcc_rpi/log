@@ -1,0 +1,27 @@
+ 
+ 
+Lendo DHT22 temperatura e umidade ar
+Sensor = Temp:  25.1, RH:  75.0%
+Temperatura = 25.1
+Umidade = 75.0
+ 
+ 
+Lendo YL38 chuva
+Sensor = 500
+Convertido = 52.00
+ 
+ 
+Lendo FC28 umidade solo
+Sensor = 340
+Convertido = 67.00
+ 
+ 
+Lendo LM35 temperatura solo
+Sensor = 71
+Convertido = 22.00
+ 
+ 
+Enviando dados ao servidor
+POST http://fernando.local:8081/tcc/sensor/1/inserir
+{'Chuva': '52.00', 'UmidadeSolo': '67.00', 'TemperaturaAr': '25.1', 'UmidadeAr': '75.0', 'TemperaturaSolo': '22.00'}
+FIM COLETA DE DADOS 

@@ -1,0 +1,82 @@
+
+#principal{
+/* float: right; */
+width:1024px;
+height: 900px;
+margin-top:10px;
+background-color:rgb(255,255,255);
+border: 1px solid #F5F7F8;
+margin-right: 3px;
+border-radius: 5px;
+margin:auto;
+
+}
+
+table {
+
+  font: normal 14px verdana, arial, helvetica, sans-serif;
+  color: #363636;
+  background: #f6f6f6;
+  /* text-align:left; */
+  margin-left: 12px; 
+  height: 800px;
+  width: 1000px;
+  margin-top: 6px;
+  border: 1px solid #666666;
+  border-radius: 5px;
+}
+  
+caption {
+  text-align: center;
+  font: bold 14px verdana, arial, helvetica, sans-serif;
+  /* font: bold 14px arial, helvetica, sans-serif; */
+  background: transparent;
+  padding:6px 4px 8px 0px;
+  text-transform: uppercase;
+}
+
+thead, tfoot {
+background:url(bg1.png) repeat-x;
+text-align:left;
+height:20px;
+}
+thead th, tfoot th {
+padding:10px;
+}
+
+table a {
+color: #333333;
+text-decoration:none;
+}
+table a:hover {
+text-decoration:underline;
+}
+tr.odd {
+background: #f1f1f1;
+}
+tbody th, tbody td {
+padding:10px;
+}
+
+.headDtMsg{
+	width:150px;
+}
+
+.headTipoMsg{
+	width:150px;
+}
+
+.headSensor{
+	width:63px;
+}
+
+
+
+
+
+
+
+	
+	
+    
+    

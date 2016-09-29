@@ -1,0 +1,55 @@
+{% include 'tcc/header.html' %}   		   
+<link rel="stylesheet" type="text/css" href="/static/tcc/css/contato.css"/>
+	<script>
+		function funcao1()
+		{
+		alert("Mensagem enviada com sucesso!!");
+		}
+	</script>
+		
+		<div id="principal" class="divLocalizacaoContato">
+			
+			<fieldset class = 'ondeEstamos'>
+					<legend class="legenda">Onde Estamos</legend>
+					<div class="labelsMenu">
+						<label class="endereco lbl">LFMW - Monitoramento Agrícola<br></label>
+						<label class="endereco">Rua da Penha, 230 - Centro<br></label>
+						<label class="endereco">CEP: 18010-003 Sorocaba/SP - Brasil<br></label>
+						<label class="endereco">Telefone: +55 15 3244 2300</label><br>
+					</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3658.8810382262886!2d-47.46133729999994!3d-23.500794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.	1!5e0!3m2!1spt-BR!2sbr!4v1436901590481" width="400" height="400" frameborder="0" style="border:0" class="frame" allowfullscreen>
+					</iframe>
+			</fieldset>
+
+ 
+			<form id="formulario" autocomplete="off" class="formContato">
+				<fieldset class="fsformContato">
+					<legend class="legenda">Fale Conosco</legend>
+					<p class="text">Por favor, para solicitar informações, dar sugestões, fazer comentários, tirar dúvidas, etc. preencher os dados abaixo:</p>
+					<div class="divNome divCampos"> 
+						<label class="lblNome lblForm">Nome:</label>
+						<input class="campo_nome" type="text">
+					</div>
+					<div class="divFone divCampos">
+						<label class="lblFone lblForm">Telefone:</label>
+						<input class="campo_nome" type="text">
+					</div>
+					<div class="divEmail divCampos">
+						<label class="lblEmail lblForm">Email:</label>
+						<input class="campo_nome txt" type="text">	
+					</div>
+					<div class="divMensagem divCampos">	
+						<label class="lblMensagem lblForm">Mensagem:</label>
+						<textarea class="msg campo_nome" cols="58" rows="8"></textarea>
+					</div>
+					<div class="divButtons divCampos">
+						<input class="botao1" type="reset"  name="b1" value="Limpar">
+						<input class="botao" type="submit"  onclick="funcao1()" name="b2" value="Enviar">
+					</div>
+				</fieldset>
+			</form>
+
+
+		</div>
+{% include 'tcc/footer.html' %}   
+	

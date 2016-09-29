@@ -1,0 +1,118 @@
+.divLocalizacaoContato{
+	width: 1024px;
+	height: 600px;
+	background-color: rgba(255,255,255,0.95);
+}
+
+/*--------------- REGIÃO DE LOCALIZAÇÃO DE CONTATO COM MAPA */
+.ondeEstamos{
+	width: 450px;
+	height: 520px;
+	float:left;
+	margin-top: 30px;
+	margin-left:40px;
+}
+/* -------------------------------------------------------- */
+
+/*-------------------------- REGIÃO DE CAMPOS DO FORMULÁRIO */
+.formContato{
+	width: 450px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 40px;
+}
+
+.fsformContato{
+	height:520px;
+}
+
+/* -------------------------------------------------------- */
+
+.endereco{
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 400;
+  color:  #8A99A0;
+
+}
+
+.frame{
+	margin-top:10px;
+}
+	
+.legenda{
+    color:#036;
+    font-weight:bold;
+	font-family: Source Sans Pro, sans-serif;
+}
+
+.divCampos{
+	display:block;
+	margin-top:10px;
+}
+
+.lblForm{
+	display:block;
+	color:#036;
+    font-weight:bold;
+	font-size:14px;
+	font-family: Source Sans Pro, sans-serif;
+}
+
+.labelsMenu{
+	margin-top:10px;
+}
+
+.campo_nome{
+	display:inline-block;
+	width: 400px;
+	margin-right: 1px;
+	height: 30px;
+	border: 1px solid #DEE6EA;
+	background: #FFF;
+	color: #7EA505;
+	font: 20px Calibri, "Dejavu Sans", Tahoma;
+}
+
+.msg{
+	resize:none;
+	height: 140px;
+}
+
+/* ----------- REGIÃO DE BOTÕES --------------*/
+.botao{
+ 
+  font-weight:bold;
+  background: #93C01F;
+  border: 1px solid #F5F7F8;
+  color: #FFF;
+  padding: 4px 8px;
+  font-size: 15px;
+  margin-left: 6px;
+	
+}
+	
+.botao1{
+  border: 1px solid #F5F7F8;
+  color: #FFF;
+  padding: 4px 8px;
+  font-size: 15px;
+  background: #8A99A0;
+  font-weight:bold;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+    
+    

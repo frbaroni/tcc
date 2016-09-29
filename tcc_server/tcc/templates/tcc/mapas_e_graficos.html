@@ -1,0 +1,31 @@
+{% include 'tcc/header.html' %}
+<link rel="stylesheet" type="text/css" href="/static/tcc/css/mapaGraficos.css"/>
+<script src="/static/tcc/graficosHistorico.js"></script>
+		
+	<!-- REGIÃO DE EXIBIÇÃO DO MAPA -->
+		<div id="divPrincipal" class="divRegiaoMapa">
+			<script src ="/static/tcc/prototipoMapa.js"></script>	    <!-- COORDENADAS DO MAPA -->
+			<div id="containerMap" class="divMap"></div>					
+		</div>
+		
+		<!-- REGIÃO DE EXIBIÇÃO DOS GRÁFICOS -->
+		<div id="Graficos" class="divGraficosDetalhe">
+			<div class="divGrafAtuHist">
+				<h3> Temperatura </h3>
+				<div id="containerTemperaturaSolo" class="divGraf" ></div>
+				<div id="containerTemperaturaAr" class="divGraf" ></div>
+			</div>	
+			<div class="divGrafAtuHist">
+				<h3> Umidade </h3>
+				<div id="containerUmidadeSolo" class="divGraf" ></div>
+				<div id="containerUmidadeAr" class="divGraf" ></div>
+			</div>
+			<div class="divGrafAtuHist">
+				<h3> Chuva </h3>
+				<div id="containerChuva" class="divGraf" ></div>
+			</div>
+				
+			
+		</div>
+			
+{% include 'tcc/footer.html' %}

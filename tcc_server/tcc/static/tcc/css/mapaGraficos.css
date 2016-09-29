@@ -1,0 +1,72 @@
+
+
+/*	----------------------------------REGIÃO DO MAPA --------------------------------------------------------*/
+.divRegiaoMapa
+{
+	background-color:rgb(255,255,255);
+	display:block;
+	width:1100px;
+	height:500px;
+	margin:auto;
+	/*border: 2px solid black;*/
+}
+
+.divRegiaoMapa .divMap
+{
+	margin:auto;
+	margin-top:10px;
+	width:1000px;
+	height:500px;
+	transition: transform 1s ease-out;
+
+}
+/*	-----------------------------------------------------------------------------------------------------------*/
+
+/*	------------------------------------------REGIÃO DE GRÁFICOS ----------------------------------------------*/
+
+h3{
+	font: 18px Calibri, "Dejavu Sans", Tahoma;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight:bold;
+	text-align:center;
+	color:rgb(0,0,0);
+	padding-top:5px;
+	padding-left:5px;
+}
+
+.divGrafAtuHist{
+	width:1100px;
+	margin:auto;
+	background-color: rgba(255,255,255,0.9);
+}
+
+.divGraf{
+	width:410px;
+	height:250px;
+	margin:20px 60px;
+	display:inline-block;
+	transition:1s;
+}
+
+.divPar{
+	margin-top: -15px;
+}
+
+footer {
+    height: 25px;
+    border-radius: 5px;
+    color: rgb(255,255,255);
+	
+}
+
+/* ----------  EFEITOS DOS GRÁFICOS  ------------*/
+/*.divGraficosDetalhe .divGraf:hover{
+	box-shadow:rgba(51,255,102,0.5);
+	box-shadow: 1px 1px 10px 3px black;
+	transform:scale(1.2) ;
+	transition: transform 1s ease-out;
+	
+}*/
+
+/*-----------------------------------------------*/

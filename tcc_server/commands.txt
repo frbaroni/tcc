@@ -1,0 +1,48 @@
+# 1. Criar projeto
+ django-admin startproject tcc_server
+
+# 2. Criar DB
+ python manage.py migrate
+
+# 3. Criar aplicacao
+ python manage.py startapp tcc
+
+# 4. Editar models.py
+
+# 5. Gerar atualizacao para o banco de dados
+ python manage.py makemigrations tcc
+
+# 6. Aplicar atualizacoes geradas para o banco de dados (versao 0001)
+ python manage.py sqlmigrate tcc 0001
+
+# 7. Atualizar o DB
+ python manage.py migrate
+
+# 8. Iniciar servidor
+ python manage.py runserver 8081
+
+# Acesso admin:
+URL: http://localhost:8081/admin/
+Conta: admin
+Senha: tcc
+
+# Definicoes de servico
+<TIPO> = TemperaturaAr|TemperaturaSolo|UmidadeAr|UmidadeSolo|Chuva
+<DATA> = YYYY-MM-DDTHH-MM-SS
+
+# Inserir dados a um sensor:
+POST http://localhost:8081/tcc/sensor/<ID_SENSOR>/inserir
+POST http://localhost:8081/tcc/sensor/1/inserir
+Chuva=100.0&UmidadeAr=60.3&UmidadeSolo=73.5&TemperaturaAr=22.3&TemperaturaSolo=18.0
+
+# Ler todos os dados de um sensor:
+GET http://localhost:8081/tcc/sensor/<ID_SENSOR>/ler
+GET http://localhost:8081/tcc/sensor/1/ler
+
+# Ler apenas um tipo de dados de um sensor:
+GET http://localhost:8081/tcc/sensor/<ID_SENSOR>/ler/<TIPO>
+GET http://localhost:8081/tcc/sensor/1/ler/Chuva
+
+# Ler apenas um tipo dados de um sensor apartir de certa data:
+GET http://localhost:8081/tcc/sensor/<ID_SENSOR>/ler/<TIPO>/<DATA>
+GET http://localhost:8081/tcc/sensor/1/ler/Chuva/2015-07-18T20:58:19
